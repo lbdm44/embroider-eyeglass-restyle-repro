@@ -19,6 +19,14 @@
 /testem.log
 /yarn-error.log
 
+# Yarn 3
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
 # ember-try
 /.node_modules.ember-try/
 /bower.json.ember-try
