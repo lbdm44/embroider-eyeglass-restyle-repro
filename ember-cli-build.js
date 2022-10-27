@@ -17,6 +17,8 @@ module.exports = function (defaults) {
   });
 
   if (isEmbroiderBuild) {
+    console.log("Building with embroider");
+
     return compatBuild(app, Webpack);
   }
 
