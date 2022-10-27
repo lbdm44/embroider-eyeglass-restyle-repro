@@ -5491,7 +5491,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"buffer@npm:^5.5.0":
+"buffer@npm:^5.1.0, buffer@npm:^5.5.0":
   version: 5.7.1
   resolution: "buffer@npm:5.7.1"
   dependencies:
@@ -6412,6 +6412,15 @@ __metadata:
     object-assign: ^4
     vary: ^1
   checksum: ced838404ccd184f61ab4fdc5847035b681c90db7ac17e428f3d81d69e2989d2b680cc254da0e2554f5ed4f8a341820a1ce3d1c16b499f6e2f47a1b9b07b5006
+  languageName: node
+  linkType: hard
+
+"crc@npm:^3.3.0":
+  version: 3.8.0
+  resolution: "crc@npm:3.8.0"
+  dependencies:
+    buffer: ^5.1.0
+  checksum: dabbc4eba223b206068b92ca82bb471d583eb6be2384a87f5c3712730cfd6ba4b13a45e8ba3ef62174d5a781a2c5ac5c20bf36cf37bba73926899bd0aa19186f
   languageName: node
   linkType: hard
 
@@ -7914,6 +7923,7 @@ __metadata:
     eslint: ^6.8.0
     eslint-plugin-ember: ^8.4.0
     eslint-plugin-node: ^11.1.0
+    eyeglass-restyle: ^1.2.2
     loader.js: ^4.7.0
     node-sass: ^7.0.3
     npm-run-all: ^4.1.5
@@ -8673,6 +8683,20 @@ __metadata:
   version: 1.4.1
   resolution: "extsprintf@npm:1.4.1"
   checksum: a2f29b241914a8d2bad64363de684821b6b1609d06ae68d5b539e4de6b28659715b5bea94a7265201603713b7027d35399d10b0548f09071c5513e65e8323d33
+  languageName: node
+  linkType: hard
+
+"eyeglass-restyle@npm:^1.2.2":
+  version: 1.2.2
+  resolution: "eyeglass-restyle@npm:1.2.2"
+  dependencies:
+    crc: ^3.3.0
+    lodash.clone: ^4.5.0
+    lodash.isequal: ^4.4.0
+    lodash.merge: ^4.6.0
+    node-sass-more-utils: 1.0.2
+    node-sass-utils: ^1.1.2
+  checksum: 59747290c8438496d7b81acedf69ce5d8a0efde1120a0e44ede6e06680e7032e7eaa89d6a9b2c797cb25300071972aaf7a71b01caa08c740148c0124b78abbee
   languageName: node
   linkType: hard
 
@@ -11669,6 +11693,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash.clone@npm:^4.5.0":
+  version: 4.5.0
+  resolution: "lodash.clone@npm:4.5.0"
+  checksum: 5839f22acf3a43c026ac4325f7bcd378f34967415cd0b9fd7efa9bbbf38dc665900d36e040944c5afab94a51ff8a24f6cfc3781fe439705cbad5c722e9506b16
+  languageName: node
+  linkType: hard
+
 "lodash.clonedeep@npm:^4.4.1, lodash.clonedeep@npm:^4.5.0":
   version: 4.5.0
   resolution: "lodash.clonedeep@npm:4.5.0"
@@ -11741,6 +11772,13 @@ __metadata:
   version: 3.0.4
   resolution: "lodash.isarray@npm:3.0.4"
   checksum: 3b298fb76ff16981353f7d0695d8680be9451b74d2e76714ddbd903a90fbaa8e1d84979d0ae99325f5a9033776771154b19e05027ab23de83202251c8abe81b5
+  languageName: node
+  linkType: hard
+
+"lodash.isequal@npm:^4.4.0":
+  version: 4.5.0
+  resolution: "lodash.isequal@npm:4.5.0"
+  checksum: da27515dc5230eb1140ba65ff8de3613649620e8656b19a6270afe4866b7bd461d9ba2ac8a48dcc57f7adac4ee80e1de9f965d89d4d81a0ad52bb3eec2609644
   languageName: node
   linkType: hard
 
@@ -12874,7 +12912,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-sass-utils@npm:^1.1.3":
+"node-sass-more-utils@npm:1.0.2":
+  version: 1.0.2
+  resolution: "node-sass-more-utils@npm:1.0.2"
+  checksum: 4f71d1382ac1ae09279e157a164058c8b6041f0160e964c789f5259c0f268c01d9dfd11229d525cd4c007b45897cb331006fa5c7e976f8b11580e90af31947f2
+  languageName: node
+  linkType: hard
+
+"node-sass-utils@npm:^1.1.2, node-sass-utils@npm:^1.1.3":
   version: 1.1.3
   resolution: "node-sass-utils@npm:1.1.3"
   checksum: ea70580cfe8552f8f666a6f0c673a036d10458939846e7049c6e950bb56b6a88addade91c7cefef46057030e6145ffb834482e9ebfd6515881bda62e5c4c77ea

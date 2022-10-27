@@ -11,6 +11,8 @@ module.exports = function (defaults) {
     // Add options here
     eyeglass: {
       embroiderEnabled: isEmbroiderBuild,
+      relativeAssets: false,
+      verbose: false,
     },
   });
 
