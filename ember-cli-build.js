@@ -1,14 +1,22 @@
 "use strict";
 
+const { Webpack } = require("@embroider/webpack");
+const { compatBuild } = require("@embroider/compat");
 const EmberApp = require("ember-cli/lib/broccoli/ember-app");
+
+const isEmbroiderBuild = !!process.env.EMBROIDER;
 
 module.exports = function (defaults) {
   let app = new EmberApp(defaults, {
     // Add options here
     eyeglass: {
-      embroiderEnabled: false,
+      embroiderEnabled: isEmbroiderBuild,
     },
   });
+
+  if (isEmbroiderBuild) {
+    return compatBuild(app, Webpack);
+  }
 
   // Use `app.import` to add additional libraries to the generated
   // output files.
